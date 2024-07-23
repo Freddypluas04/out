@@ -1,0 +1,45 @@
+<section class="bg__img">
+    <!-- Contenedor del logo -->
+    <div class="logo-container">
+        <img src="/img/logo.png" alt="Logo" class="logo-image">
+    </div>
+
+    <!-- Formulario de inicio de sesión centrado -->
+    <div class="login-form-container">
+        <!-- Sección de alerta -->
+        <div class="alert-container">
+            {{>alert}} <!-- Espacio para alertas dinámicas -->
+        </div>
+
+        <!-- Formulario -->
+        <form action="/login" method="post" class="form_main">
+            <h2 class="login-title">LOGIN</h2>
+<br>
+            <!-- Campo para el nombre de usuario -->
+            <div class="input-group">
+                <input type="text" class="input-field" id="username" name="username" placeholder="Nombre de usuario" required>
+            </div>
+
+            <!-- Campo para la contraseña -->
+            <div class="input-group">
+                <input type="password" class="input-field" id="password" name="password" placeholder="Contraseña" required>
+            </div>
+
+            <!-- Botón para iniciar sesión -->
+            <div class="button-container">
+                <button type="submit" class="login-button">Iniciar sesión</button>
+            </div>
+            <br>
+
+            <!-- Enlace para crear cuenta -->
+            <div class="create-account">
+                <p class="create-account">¿No tienes cuenta? <a href="/register">Crear cuenta</a></p>
+            </div>
+
+            <!-- Enlace para recordar contraseña -->
+            <div class="forgot-password">
+                <a href="/forgot-password">¿Olvidaste tu contraseña?</a>
+            </div>
+        </form>
+    </div>
+</section>

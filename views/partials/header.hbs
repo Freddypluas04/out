@@ -1,0 +1,28 @@
+<header>
+    <menu>
+        <li>
+            <a href="/principal">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="/materias/mate">
+                Mate
+            </a>
+        </li>
+
+        {{#if user}}
+        <li>
+            <a href="#">
+                HOla user
+            </a>
+        </li>
+        {{else}}
+        <li>
+            <a href="/login">
+                inicar sesion
+            </a>
+        </li>
+        {{/if}}
+    </menu>
+</header>

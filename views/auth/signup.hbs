@@ -1,0 +1,54 @@
+<section class="bg__img">
+    <!-- Contenedor del logo -->
+    <div class="logo-container">
+        <img src="/images/logo3dwith-800x374-1.webp" alt="Logo" class="logo-image">
+    </div>
+
+    <!-- Formulario de registro centrado -->
+    <form class="login-form-container" action="/create/user" method="post">
+        <!-- Sección de alerta -->
+        <div class="alert-container">
+            {{>alert}} <!-- Espacio para alertas dinámicas -->
+        </div>
+
+        <!-- Formulario de registro -->
+        <form action="/signup" method="post" class="form_main">
+            <h2 class="login-title">REGISTRO</h2>
+            <br>
+            <!-- Campo para el nombre de usuario -->
+            <div class="input-group">
+                <input type="text" class="input-field" id="username" name="username" placeholder="Nombre "
+                    required>
+            </div>
+
+            <!-- Campo para el correo electrónico -->
+            <div class="input-group">
+                <input type="email" class="input-field" id="email" name="email" placeholder="Correo electrónico"
+                    required>
+            </div>
+
+            <!-- Campo para el telefono -->
+            <div class="input-group">
+                <input type="text" class="input-field" id="cell" name="cell" placeholder="Celular"
+                    required>
+            </div>
+
+            <!-- Campo para la contraseña -->
+            <div class="input-group">
+                <input type="password" class="input-field" id="password" name="password" placeholder="Contraseña"
+                    required>
+            </div>
+
+            <!-- Botón para crear cuenta -->
+            <div class="button-container">
+                <button type="submit" class="login-button">Crear cuenta</button>
+            </div>
+            <br>
+
+            <!-- Enlace para iniciar sesión si ya tiene una cuenta -->
+            <div class="create-account">
+                <p class="create-account">¿Ya tienes cuenta? <a href="/login">Iniciar sesión</a></p>
+            </div>
+        </form>
+    </form>
+</section>

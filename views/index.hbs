@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Let&#39;s Play Bingo</title>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+    <link rel="stylesheet" href="/style/header.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="row">
+            <div class="col s12 m9">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>Let's Play Bingo</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p class="description">
+                            description
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div id="buttons">
+                            <a class="btn green waves-effect " id="startGame">Start Game</a>
+                            <a class="btn orange waves-effect disabled" id="pauseGame"><i
+                                    class="material-icons">pause</i></a>
+                            <a class="btn cyan waves-effect disabled" id="resumeGame"><i
+                                    class="material-icons">play_arrow</i></a>
+                            <a class="btn cyan waves-effect disabled" id="nextBall">Next Ball</a>
+                            <a class="btn red waves-effect disabled" id="resetGame">Reset Board</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <h3>Current Call</h3>
+                <div id="currentBall" class="valign-wrapper">
+                    <div id="ballGraphic"><span id="ballText"></span></div><span id="callNumber"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="center-align grey darken-4 grey-text text-darken-2" id="bingoboard"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div id="delayrange">
+                <i class="material-icons">timer_off</i>
+                <form action="#">
+                    <p class="range-field">
+                        <input type="range" id="range" min="5" max="16" value="10">
+                    </p>
+                </form>
+                <i class="material-icons">timer</i>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div id="voices"></div>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src="/javascript/main.js"></script>
+
+</body>
+
+</html>
